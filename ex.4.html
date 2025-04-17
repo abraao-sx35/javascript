@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: normal 18px 'arial'
+        }
+    </style>
+</head>
+<body>
+    <h1>introducao ao dom</h1>
+    <div class="msg">clique em mim</div>
+    <p>apredendo dom com javascript</p>
+    <br>
+    <script>
+        var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName("p")
+       var d = document.getElementsByClassName('msg')
+       
+       corpo.style.background = 'red'
+       window.document.write('esta escrito assim:'+ p1[0].innerText)
+       d[0].style.background = 'blue'
+    </script>
+
+</body>
+</html>
