@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript funcao</title>
+    <style>
+        div{
+            background-color: green;
+            width:200px;
+            height:200px;
+            text-align: center;
+            font: normal 20pt arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <!--metodo para chamar a funcao  do mouse sair e entrar por html
+        coloco dentro da div junto com o id ou etc..
+     onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()"
+    -->
+
+
+    <script>
+        var area = document.getElementById('area')
+
+        /*
+        metodo para chamar a funcao so que pelo javaS 
+        obs(addevent.. vai analisar determinados envetos feitos)
+         */
+        area.addEventListener('click',clicou)
+        area.addEventListener('mouseenter',entrou)
+        area.addEventListener('mouseout',saiu)
+        function clicou(){
+            area.innerText = "clicou"
+            area.style.background = 'red'
+        }
+
+        function entrou(){
+            area.innerText = 'entrou'
+            area.style.background = 'blue'
+        }
+
+        function saiu(){
+            area.innerText = 'saiu'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

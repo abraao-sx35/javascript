@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaS</title>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="multa"></div>
+
+    <script>
+        function verificar(){
+        var vel = document.getElementById('txtvel')
+        var multa = document.getElementById('multa')
+        var velocidade = Number(vel.value)
+        multa.innerText = `sua velocidade atual e de ${velocidade}km`
+            if (velocidade > 60){
+                multa.innerHTML = `sua velocidade foi ${velocidade}km , voce ultrapassou o limite de velocidade <br> voce recebeu uma multa 200 R$`
+            }
+        }
+    </script>
+</body>
+</html>
