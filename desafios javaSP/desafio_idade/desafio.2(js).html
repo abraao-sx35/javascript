@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 2 javasp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>verificador de idade</header>
+    <div class="center">
+        <p>
+            <strong>nascimento:</strong> <input type="number" name="" id="nascimento"  min="1800" max="2025" >
+        </p>
+        <p>
+            <strong>  
+                sexo:
+            </strong>
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc"><strong>masculino</strong></label>
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi"><strong>feminino</strong></label>
+        </p>
+        <p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </p>
+        <div>
+            <h4 style="text-align: center;" id="inden"></h4>
+            <img id="imagem" src="" alt="">
+        </div>
+    </div>
+    <script src="scrpit.js"></script>
+</body>
+</html>
