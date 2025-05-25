@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            height: 200px;
+            width: 500px;
+            border-radius: 15px;
+        }
+
+        body{
+            background-color: lightseagreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            margin-top: 30px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        input{
+            margin-bottom: 10px;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 10%;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>vamos contar</h1>
+    <div class="container">
+        <form action="">
+            <label for="inicio">inicio</label>
+            <input type="number" name="" id="inicio" required>
+            <br>
+            <label for="fim">fim</label>
+            <input type="number" name="" id="fim" required>
+            <br>
+            <label for="passo">passos</label>
+            <input type="number" name="" id="passo" required>
+            <br>
+            <input type="button" value="contar" onclick="somar()">
+            <div id="res">
+                contando: <br>
+            </div>
+        </form>
+    </div>
+    <script>
+        function somar(){
+            var ini = document.getElementById('inicio')
+            var fi = document.getElementById('fim')
+            var pas = document.getElementById('passo')
+            var res = document.getElementById('res')
+
+            var inicio = Number(ini.value)
+            var fim = Number(fi.value)
+            var passos = Number(pas.value)
+
+            if ( ini.value == "" || fi.value == "" || pas.value == ""){
+                alert('voce deve passar valores nos campos')
+            }
+
+            else if (inicio > fim){
+                alert('o inicio tem que ser menor que o fim')
+            }
+
+            else if (passos <= 0 ) {
+                alert('o passo deve ser maior que zero')
+                res.innerHTML = 'passo invalido'
+            }
+
+            for ( var i = inicio; i <= fim ; i += passos){
+                 if (i <= fim){
+                     res.innerHTML += ` ${i} >`
+                 }
+
+            }
+        
+        }
+    </script>
+</body>
+</html>
