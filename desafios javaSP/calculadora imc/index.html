@@ -19,17 +19,18 @@
 
         <div class="IMC">
             <label for="peso">peso</label>
-            <input type="text" name="peso" id="peso" placeholder="escreva seu peso">
+            <input type="number" name="peso" id="peso" placeholder="escreva seu peso">
         </div>
         <div class="IMC">
             <label for="altura">altura</label>
-            <input type="text" name="altura" id="altura" placeholder="escreva sua altura">
+            <input type="number" name="altura" id="altura" placeholder="escreva sua altura">
         </div>
 
-        <button>calcular</button>
-        <div>
-            <p></p>
+        <button onclick="somar()">calcular</button>
+        <div class="resposta">
+            <p id="mostrar"></p>
         </div>
     </div>
+    <script src="javasp.js"></script>
 </body>
 </html>
