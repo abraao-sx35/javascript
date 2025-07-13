@@ -11,3 +11,5 @@ const maior = idades.filter(maior18) // valor,indice , arry
 
 console.log(idades)
 console.log(`as idades com maior de  18 anos são ${maior}`)
+
+//metodo filter
