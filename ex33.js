@@ -59,7 +59,26 @@ btnRemoverCurso.addEventListener('click',()=>{
   }
 })
 
+btnAdicionarNovoCurso.addEventListener('click',()=>{
+  const criando = document.createElement("div");
+  criando.setAttribute('id','c')
+  criando.setAttribute("class", "curso c1");
+  criando.innerHTML = inputCurso.value
 
+  const comandos = document.createElement("div");
+  comandos.setAttribute("class", "comandos");
+
+  const rb = document.createElement("input");
+  rb.setAttribute("type", "radio");
+  rb.setAttribute("name", "rb_curso");
+
+  comandos.appendChild(rb);
+  criando.appendChild(comandos);
+
+  caixaCursos.appendChild(criando);
+  alert('curso adicionado')
+
+})
 
 // const novoElemento = document.createElement("div");
 //   novoElemento.setAttribute("id", "c" + chave);
