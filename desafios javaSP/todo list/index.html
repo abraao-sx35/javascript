@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: gold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .titulo{
+            text-align: center;
+            width: 500px;
+            height: 70px;
+            background-color: rgb(0, 0, 0);
+            color: yellow;
+            }
+
+         .titulo>h1{
+             font-size: 40px;
+         }   
+
+        .tarefas{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 490px;
+            height: 50px;
+            color: black;
+            align-items: center;
+            border: 2px solid black; 
+            font-weight: bolder;
+        }
+
+        #fechar{
+            border: 1px solid black;
+             padding: 5px;
+        }
+
+        #adicionar{
+            width: 400px;
+            height: 30px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo"><h1>todo list</h1></div>
+    <div class="container_tarefas">
+        <div class=" tarefas">
+            <input type="checkbox" name="" id="">
+            estudar javascript
+            <div id="fechar">X</div>
+        </div>
+
+    </div>
+    <br>
+    <input id="adicionar" type="text" name="" id="" placeholder="digite a tarefa e pressione enter para adicionar a tarefa">
+</body>
+</html>
