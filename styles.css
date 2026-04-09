@@ -54,3 +54,7 @@
   button {
     padding: 10px 20p
   }  
+
+  .selecionado{
+    background-color: red;
+  }
